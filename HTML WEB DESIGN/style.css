@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9d9d9;
+  height: 80px;
+  width: 100%;
+  position: sticky;
+}
+#logo{
+  color: rgb(196, 37, 37);
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.Haven {
+  color: rgb(190, 69, 69);
+  padding-left: 20px;
+  font-size: 20px;
+}
+.list{
+  float: right;
+  margin-right: 40px;
+}
+.list li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+.list li a {
+  color: rgb(189, 68, 68);
+}
+.list li a:hover {
+  text-decoration: underline;
+  color: coral;
+}
+.list li a:active {
+  text-decoration: underline;
+}
+#header {
+  font-weight: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-image: url(valentine.jpg) ;
+  padding: 40px;
+  color: rgb(190, 69, 69);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  line-height: 25px;
+  text-align: center;
+  margin: 50px;
+  margin-top: 10px;
+  padding-bottom: 60px;
+}
+#Us {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  size: 50px;
+}
+.shead {
+  color: rgb(180, 126, 54);
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.Gallerylink {
+  color: rgb(235, 124, 124);
+}
+.Gallerylink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.slider{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide{
+  width: 100%;
+  height: 100vh;
+}
+.overlay{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  position: absolute;
+  top: 0;
+}

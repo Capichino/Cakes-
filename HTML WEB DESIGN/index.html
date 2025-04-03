@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website that talks about cakes and how to make them.">
+  <title>Cakes Haven</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+   
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path d="M6 6L18 18M6 18L18 6" stroke="black" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Learn</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <ul>
+      <li id="logo"><a href="#"><img src="logo.webp" class="cake-logo"></a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#about-section">About</a></li>
+      <li class="hideOnMobile"><a href="#video-section">Learn</a></li>
+      <li class="hideOnMobile"><a href="#footer">Contact</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="black" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </a></li>
+    </ul>
+  </nav>
+
+  <section class="article-section">
+    <div class="container">
+      <h1>Welcome to Cakes Haven</h1>
+      <p class="intro">Discover the art of baking and the sweet magic of cakes!</p>
+
+      <article>
+        <h2>The Sweet Story of Cakes</h2>
+        <p>Cakes have been a symbol of joy and celebration for centuries. From birthdays to weddings, no occasion feels complete without a delicious cake. The earliest cakes were simple bread-like creations, but over time, they have evolved into rich, artistic desserts with endless flavors, textures, and decorations.</p>
+
+        <p>At Cakes Haven, we explore everything from classic sponge cakes to modern gourmet treats. Whether you are a beginner or an experienced baker, our collection of recipes and techniques will guide you in creating the perfect cake for every occasion.</p>
+
+        <p><a href="#" class="join">Join us as we embark on a delicious journey through the world of baking!</a></p>
+      </article>
+    </div>
+  </section>
+ 
+  <section class="image-slider-section">
+    <div class="container">
+      <h2>Our Cake Gallery</h2>
+  
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" checked>
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+  
+          <div class="slide first">
+            <img src="image1.jpg" alt="Chocolate Cake">
+          </div>
+          <div class="slide">
+            <img src="image2.jpg" alt="Vanilla Cake">
+          </div>
+          <div class="slide">
+            <img src="image3.jpg" alt="Strawberry Cake">
+          </div>
+          <div class="slide">
+            <img src="image4.jpg" alt="Custom Designed Cake">
+          </div>
+  
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+
+        <div class="arrow arrow-left" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="arrow arrow-right" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+    </div>
+  </section>
+  
+<section id="about-section" class="about-section">
+  <div class="container">
+    <h1>About Cakes Haven</h1>
+    <p class="mission-statement">
+      At <strong>Cakes Haven</strong>, we believe that baking is more than just mixing ingredients—it's an
+      <em>art, a science, and a joyful experience</em> that brings people together.  
+    </p>
+
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>
+          Our goal is to <strong>inspire and teach</strong> people of all skill levels how to bake delicious cakes with confidence and creativity.
+          Whether you're a beginner or an experienced baker, we're here to help you master the art of baking.
+        </p>
+
+        <ul>
+          <li> <strong>Step-by-step tutorials</strong> Easy-to-follow recipes.</li>
+          <li> <strong>Baking tips & tricks</strong> Master fluffy cakes and perfect decorations.</li>
+          <li> <strong>Inspiration & creativity</strong> Unique cake ideas to spark your imagination.</li>
+        </ul>
+
+        <p class="closing-message">
+          <em>Join us on this sweet journey and start baking today!</em> 
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="1.jpg" alt="Baking a delicious cake">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="video-section" class="video-section">
+  <div class="container">
+    <h1>Baking Video Tutorials</h1>
+    <p class="intro-text">Learn how to bake delicious cakes with these expert tutorials!</p>
+
+    <div class="video-grid">
+      
+      <div class="video-card">
+        <iframe 
+          src="https://www.youtube.com/embed/EYXQmbZNhy8?enablejsapi=1&mute=1"
+          allow="autoplay; encrypted-media" allowfullscreen class="video-frame"></iframe>
+        <div class="video-title">How to Bake a Perfect Vanilla Cake</div>
+      </div>
+
+      <div class="video-card">
+        <iframe 
+          src="https://www.youtube.com/embed/vI5w-fK25w4?enablejsapi=1&mute=1"
+          allow="autoplay; encrypted-media" allowfullscreen class="video-frame"></iframe>
+        <div class="video-title">The Best Chocolate Cake Recipe</div>
+      </div>
+
+      <div class="video-card">
+        <iframe 
+          src="https://www.youtube.com/embed/z7nFnKuYOT4?enablejsapi=1&mute=1"
+          allow="autoplay; encrypted-media" allowfullscreen class="video-frame"></iframe>
+        <div class="video-title">Cake Decoration Tips & Tricks</div>
+      </div>
+
+      <div class="video-card">
+        <iframe 
+          src="https://www.youtube.com/embed/KvlAjbfv20M?enablejsapi=1&mute=1"
+          allow="autoplay; encrypted-media" allowfullscreen class="video-frame"></iframe>
+        <div class="video-title">How to Make a Moist Red Velvet Cake</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-info">
+        <h3>Contact Us</h3>
+        <p><strong>Email:</strong> support@cakeshaven.com</p>
+        <p><strong>Phone:</strong> +233 59 615 7531</p>
+        <p><strong>Address:</strong> UENR CAMPUS, SUNYANI GHANA</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="www.facebook.com" target="_blank"><img src="Facebook-logo.png" alt=""></a>
+        <a href="www.instagram.com" target="_blank"><img src="Instagram-Logo.png" alt=""></a>
+        <a href="www.youtube.com" target="_blank"><img src="youtube.png" alt=""></a>
+      </div>
+    </div>
+
+    <p class="footer-bottom">© 2024 Cakes Haven. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+  
+</body>
+
+</html>
